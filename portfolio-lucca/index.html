@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Lucca Oliveira - Desenvolvedor Web</title>
+    <meta name="description" content="Portfolio pessoal de Lucca Oliveira, desenvolvedor web especializado em HTML, CSS, JavaScript e frameworks modernos.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>Lucca Oliveira</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Olá, eu sou</h2>
+                <h1>Lucca Oliveira</h1>
+                <h3>Desenvolvedor Web Full Stack</h3>
+                <p>Crio experiências digitais incríveis com código limpo e tecnologias modernas. Especializado em desenvolvimento web responsivo e aplicações interativas.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="assets/profile.jpg" alt="Lucca Oliveira" onerror="this.src='https://via.placeholder.com/400x400/4F46E5/FFFFFF?text=LO'">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Role para baixo</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <p>Conheça um pouco da minha jornada</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Paixão por Tecnologia</h3>
+                    <p>Sou um desenvolvedor apaixonado por criar soluções digitais que fazem a diferença. Com experiência em desenvolvimento web full stack, especializo-me em criar aplicações modernas, responsivas e de alta performance.</p>
+                    <p>Minha jornada começou com curiosidade sobre como os sites funcionam, e evoluiu para uma carreira dedicada a transformar ideias em realidade digital. Acredito que o bom design e código limpo são fundamentais para uma experiência excepcional do usuário.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>2+</h4>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Projetos Completados</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Dedicado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/coding.jpg" alt="Coding" onerror="this.src='https://via.placeholder.com/500x400/10B981/FFFFFF?text=Coding'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Habilidades Técnicas</h2>
+                <p>Tecnologias que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-html5-fill"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semântica e estruturação web</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-css3-fill"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Estilização avançada e responsividade</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-javascript-fill"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e lógica dinâmica</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-reactjs-fill"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Componentes e interfaces modernas</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-nodejs-fill"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend e APIs robustas</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="ri-git-branch-fill"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Controle de versão e colaboração</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meus Projetos</h2>
+                <p>Trabalhos recentes e destaques</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Projeto 1" onerror="this.src='https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=Projeto+1'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de produtos.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Projeto 2" onerror="this.src='https://via.placeholder.com/400x250/10B981/FFFFFF?text=Projeto+2'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Aplicação para gerenciamento de tarefas com funcionalidades de colaboração em tempo real.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Projeto 3" onerror="this.src='https://via.placeholder.com/400x250/8B5CF6/FFFFFF?text=Projeto+3'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard meteorológico com previsões detalhadas e visualizações interativas.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="#" class="btn btn-primary">Ver Mais Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vamos Conversar</h2>
+                <p>Entre em contato para projetos ou oportunidades</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>lucca.oliveira@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>+55 (11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-github-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Lucca Oliveira</h3>
+                    <p>Desenvolvedor Web Full Stack</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="ri-github-fill"></i></a>
+                    <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" class="social-link"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lucca Oliveira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
