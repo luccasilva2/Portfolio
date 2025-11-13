@@ -86,24 +86,38 @@ document.querySelectorAll('section, .skill-card, .project-card, .stat').forEach(
 
 // Contact form handling
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-
-        // Simulate form submission (replace with actual API call)
-        console.log('Form submitted:', data);
-
-        // Show success message
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
 
-        submitBtn.textContent = 'Mensagem Enviada!';
+        // Disable button and show loading
+        submitBtn.textContent = 'Enviando...';
         submitBtn.disabled = true;
 
-        // Reset form
-        contactForm.reset();
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Success
+                submitBtn.textContent = 'Mensagem Enviada!';
+                contactForm.reset();
+            } else {
+                // Error
+                submitBtn.textContent = 'Erro ao enviar. Tente novamente.';
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            submitBtn.textContent = 'Erro ao enviar. Tente novamente.';
+        }
 
         // Restore button after 3 seconds
         setTimeout(() => {
